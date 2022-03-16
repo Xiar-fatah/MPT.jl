@@ -6,4 +6,9 @@ module MPT
 using Statistics, XLSX, DataFrames, JuMP, Dates
 import Ipopt
 
+include("import.jl")
+include("portfolios.jl")
+include("tools.jl")
+include("walkforward.jl")
+
 end
