@@ -1,3 +1,11 @@
-function _convex_combination(cov_matrix::AbstractMatrix, alpha::Real)#::AbstractMatrix
-    return 0
+function _convex_combination(Q::AbstractMatrix, κ::Real)::AbstractMatrix
+    """
+    src: https://arxiv.org/pdf/1310.3396.pdf
+    ---------
+    Parameters:
+    Q: Covariance matrix
+
+    """ 
+    Q_prim = κ * Q + (1-κ) * I(size(Q)[1])
+    return Q_prim
 end

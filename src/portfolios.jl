@@ -23,8 +23,8 @@ end
 function long_only_minimum_variance(returns::AbstractMatrix)::AbstractVector
     cov_matrix = cov(returns)
     portfolio = Model(Ipopt.Optimizer)
-    num_assets = size(cov_matrix)[1]
     set_silent(portfolio) # Suppress the output
+    num_assets = size(cov_matrix)[1]
     @variable(portfolio, x[1:num_assets] >= 0)
     @objective(portfolio, Min, x' * cov_matrix * x)
     @constraint(portfolio, sum(x[i] for i = 1:num_assets) == 1)
