@@ -18,6 +18,7 @@ Ipopt = "1.0.2"
 JuMP = "0.23.2"
 XLSX = "0.7.9"
 julia = "1.7.1"
+Documenter = "0.27.15"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
