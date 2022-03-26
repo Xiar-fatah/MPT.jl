@@ -19,11 +19,9 @@ makedocs(;
     ),
     pages=[
         #"Home" => "index.md",
-        pages    = [
             "index.md",
             "cholesky.md",
         ]
-    ],
 )
 
 deploydocs(;
