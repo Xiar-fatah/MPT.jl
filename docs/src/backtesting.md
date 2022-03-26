@@ -1,4 +1,4 @@
-# [Backtesting]
+# Backtesting
 
 
 ## Walk-Forward Analysis
