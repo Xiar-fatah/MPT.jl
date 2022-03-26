@@ -1,9 +1,9 @@
-push!(LOAD_PATH,"../src/")
 using Pkg
-pkg"activate ."
-using Documenter
+#pkg"activate ."
 pkg"activate .."
-using MPT 
+push!(LOAD_PATH,"../src/")
+
+using MPT, Documenter
 
 DocMeta.setdocmeta!(MPT, :DocTestSetup, :(using MPT); recursive=true)
 
