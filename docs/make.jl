@@ -20,7 +20,7 @@ makedocs(;
     pages=[
         #"Home" => "index.md",
             "index.md",
-            "cholesky.md",
+            "portfolio.md",
         ]
 )
 
