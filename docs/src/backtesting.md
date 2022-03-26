@@ -1,4 +1,4 @@
-# [Backtesting](@id cholesky-variates)
+# [Backtesting]
 
 
 ## Walk-Forward Analysis
