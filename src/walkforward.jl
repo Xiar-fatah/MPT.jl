@@ -24,6 +24,9 @@ end
 
 """
     walk_forward(returns::AbstractDataFrame, func, rebalancing::Int)
+
+The *Arcsine distribution* has probability density function
+
 """
 function walk_forward(returns::AbstractDataFrame, func, rebalancing::Int)
     """
