@@ -18,11 +18,16 @@ makedocs(;
         assets=String[],
     ),
     pages=[
-        "Home" => "index.md",
+        #"Home" => "index.md",
+        pages    = [
+            "index.md",
+            "cholesky.md",
+        ]
     ],
 )
 
 deploydocs(;
     repo="github.com/Xiar-fatah/MPT.jl",
-    devbranch="master",
+    versions = ["stable" => "master", "dev" => "master"]
+    #devbranch="master",
 )
