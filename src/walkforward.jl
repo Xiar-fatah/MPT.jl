@@ -22,7 +22,10 @@ function _realised_returns(returns_df::AbstractDataFrame,
     return hcat(date_df, cumsum_df)
 end
 
-function walk_forward(returns::AbstractDataFrame, func, rebalancing::Int = 1)
+"""
+    walk_forward(returns::AbstractDataFrame, func, rebalancing::Int)
+"""
+function walk_forward(returns::AbstractDataFrame, func, rebalancing::Int)
     """
     Input: 
     - Returns over full period
