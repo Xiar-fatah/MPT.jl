@@ -1,10 +1,10 @@
 # [Backtesting](@id cholesky-variates)
 
 
-## Distributions
+## Walk-Forward Analysis
 
 ```@docs
-walkforward
+walk_forward
 ```
 
 ## Index
