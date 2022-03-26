@@ -5,7 +5,7 @@
 ## Distributions
 
 ```@docs
-LKJCholesky
+portfolios
 ```
 
 ## Index

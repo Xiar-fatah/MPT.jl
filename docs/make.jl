@@ -21,6 +21,7 @@ makedocs(;
         #"Home" => "index.md",
             "index.md",
             "portfolio.md",
+            "backtesting.md"
         ]
 )
 
