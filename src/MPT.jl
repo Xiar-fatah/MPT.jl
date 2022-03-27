@@ -7,7 +7,10 @@ using Statistics, XLSX, DataFrames, JuMP, Dates
 import Ipopt
 
 export 
-    equal_weights, walk_forward 
+    equal_weights, 
+    walk_forward, 
+    long_only_minimum_variance,
+    random_weights
 
 include("import.jl")
 include("portfolios.jl")

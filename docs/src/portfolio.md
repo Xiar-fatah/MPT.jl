@@ -7,6 +7,18 @@
 ```@docs
 equal_weights
 ```
+## Long Only Minimum Variance
+
+```@docs
+long_only_minimum_variance
+```
+
+## Random Weights
+
+```@docs
+random_weights
+```
+
 
 ## Index
 
