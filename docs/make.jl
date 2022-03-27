@@ -1,7 +1,7 @@
-#using Pkg
+using Pkg
 #pkg"activate ."
-#pkg"activate .."
-#push!(LOAD_PATH,"../src/")
+pkg"activate .."
+push!(LOAD_PATH,"../src/")
 
 using MPT, Documenter
 
