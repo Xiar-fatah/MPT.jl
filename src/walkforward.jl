@@ -23,10 +23,8 @@ function _realised_returns(returns_df::AbstractDataFrame,
 end
 
 """
-    walk_forward(returns::AbstractDataFrame, func, rebalancing::Int)
-
+    walk_forward
 The *Arcsine distribution* has probability density function
-
 """
 function walk_forward(returns::AbstractDataFrame, func, rebalancing::Int)
     """

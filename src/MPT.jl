@@ -5,10 +5,10 @@ module MPT
 # The user perhaps can plot themselves.
 using Statistics, XLSX, DataFrames, JuMP, Dates
 import Ipopt
+
 export 
-    walk_forward,
-    equal_weights
-    
+    equal_weights, walk_forward 
+
 include("import.jl")
 include("portfolios.jl")
 include("tools.jl")

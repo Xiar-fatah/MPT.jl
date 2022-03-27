@@ -1,12 +1,8 @@
 """
-    equal_weights(returns)
+    equal_weights
 ```math
 f(x) = \\frac{1}{\\pi \\sqrt{(x - a) (b - x)}}, \\quad x \\in [a, b]
 ```
-
-External links
-* [Arcsine distribution on Wikipedia](http://en.wikipedia.org/wiki/Arcsine_distribution)
-Use `Arcsine(a, b, check_args=false)` to bypass argument checks.
 """
 function equal_weights(returns::AbstractMatrix)::AbstractVector
     """

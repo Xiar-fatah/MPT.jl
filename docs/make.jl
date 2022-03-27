@@ -1,5 +1,4 @@
 #using Pkg
-#pkg"activate ."
 #pkg"activate .."
 #push!(LOAD_PATH,"../src/")
 

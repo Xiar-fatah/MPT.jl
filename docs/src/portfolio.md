@@ -5,7 +5,7 @@
 ## Equal Weights
 
 ```@docs
-equal_weights(returns)
+equal_weights
 ```
 
 ## Index
