@@ -10,7 +10,8 @@ export
     equal_weights, 
     walk_forward, 
     long_only_minimum_variance,
-    random_weights
+    random_weights,
+    mdp
 
 include("import.jl")
 include("portfolios.jl")

@@ -49,6 +49,33 @@ function random_weights(returns::AbstractMatrix)::AbstractVector
     weights = weights ./ norm
     return weights
 end
+"""
+    mdp
+```math
+\textrm{maximize}_{\vec{w}} \\quad  \frac{\vec{w}^T \vec{\sigma}}{\sqrt{\vec{w}^T \Sigma \vec{w}}}, \\
+\textrm{subject to} \\quad \vec{1} \vec{w} = 1.
+```
+External links
+* Choueifaty, Y., Froidure, T., & Reynier, J. (2013). 
+  Properties of the most diversified portfolio,
+  Journal of investment strategies, 2(2), 49-70,
+  doi: [10.2139/ssrn.1895459](https://dx.doi.org/10.2139/ssrn.1895459)
+"""
+function mdp(returns::AbstractMatrix)::AbstractVector
+    cov_matrix = cov(returns)
+    var_vector = var(returns)
+    portfolio = Model(Ipopt.Optimizer)
+    set_silent(portfolio) # Suppress the output
+    num_assets = size(cov_matrix)[1]
+    @variable(portfolio, x[1:num_assets] >= 0)
+    @objective(portfolio, Min, 0.5 * x' * cov_matrix * x)
+    @constraint(portfolio, sum(x[i] * var_vector[i] for i = 1:num_assets) == 1)
+    optimize!(portfolio)
+    weights = value.(x)
+    weights = weights ./ sum(weights)
+    return weights
+end
+
 function inverse_variance(returns::AbstractMatrix)::AbstractVector
     return 0
 end
