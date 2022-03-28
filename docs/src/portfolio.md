@@ -13,6 +13,7 @@ equal_weights
 long_only_minimum_variance
 ```
 ## Most Diversified Portfolio
+
 ```@docs
 mdp
 ```
@@ -21,7 +22,6 @@ mdp
 ```@docs
 random_weights
 ```
-
 
 ## Index
 
