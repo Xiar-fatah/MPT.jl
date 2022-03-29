@@ -52,8 +52,10 @@ end
 """
     mdp
 ```math
-\\textrm{maximize}_{\vec{w}} \\quad  \\frac{\\vec{w}^T \\vec{\\sigma}}{\\sqrt{\\vec{w}^T \\Sigma \\vec{w}}}, \\
+\begin{aligned}
+\\textrm{maximize}_{\\vec{w}} \\quad  \\frac{\\vec{w}^T \\vec{\\sigma}}{\\sqrt{\\vec{w}^T \\Sigma \\vec{w}}}, \\
 \\textrm{subject to} \\quad \\vec{1} \\vec{w} = 1.
+\end{aligned}
 ```
 External links
 * Choueifaty, Y., Froidure, T., & Reynier, J. (2013). 
