@@ -52,10 +52,7 @@ end
 """
     mdp
 ```math
-\begin{aligned}
-\\quad  \\frac{\\vec{w}^T \\vec{\\sigma}}{\\sqrt{\\vec{w}^T \\Sigma \\vec{w}}}, \\
-\\quad \\vec{1} \\vec{w} = 1.
-\end{aligned}
+    \\quad  \\frac{\\vec{w}^T \\vec{\\sigma}}{\\sqrt{\\vec{w}^T \\Sigma \\vec{w}}}
 ```
 External links
 * Choueifaty, Y., Froidure, T., & Reynier, J. (2013). 
