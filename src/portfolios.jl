@@ -1,8 +1,13 @@
 """
     equal_weights
 ```math
-f(x) = \\frac{1}{\\pi \\sqrt{(x - a) (b - x)}}, \\quad x \\in [a, b]
+    w_i = 1/N \\quad  i \\in {1, \\hdots, N} 
 ```
+External links
+* DeMiguel, V., Garlappi, L., & Uppal, R. (2009). 
+  Optimal versus naive diversification: How inefficient is the 1/N portfolio strategy?.
+  The review of Financial studies, 22(5), 1915-1953.
+  doi: [10.1093/hhm075](https://doi.org/10.1093/rfs/hhm075)
 """
 function equal_weights(returns::AbstractMatrix)::AbstractVector
     """
@@ -16,9 +21,15 @@ end
 
 """
     long_only_minimum_variance
-```math
-f(x) = \\frac{1}{\\pi \\sqrt{(x - a) (b - x)}}, \\quad x \\in [a, b]
+    ```math
+    \\textrm{minimize}_{\\frac{\\vec{w}^T \\vec{\\sigma}}{\\sqrt{\\vec{w}^T \\Sigma \\vec{w}}}, \\\\
+    \\textrm{subject to} \\quad \\vec{1}^T \\vec{w} = 1 \\ \\vec{w} \\geq 0.
 ```
+External links
+* DeMiguel, V., Garlappi, L., & Uppal, R. (2009). 
+  Optimal versus naive diversification: How inefficient is the 1/N portfolio strategy?.
+  The review of Financial studies, 22(5), 1915-1953.
+  doi: [10.1093/hhm075](https://doi.org/10.1093/rfs/hhm075)
 """
 function long_only_minimum_variance(returns::AbstractMatrix)::AbstractVector
     cov_matrix = cov(returns)
@@ -57,8 +68,8 @@ end
 ```
 External links
 * Choueifaty, Y., Froidure, T., & Reynier, J. (2013). 
-  Properties of the most diversified portfolio,
-  Journal of investment strategies, 2(2), 49-70,
+  Properties of the most diversified portfolio.
+  Journal of investment strategies, 2(2), 49-70.
   doi: [10.2139/ssrn.1895459](https://dx.doi.org/10.2139/ssrn.1895459)
 """
 function mdp(returns::AbstractMatrix)::AbstractVector
