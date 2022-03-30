@@ -5,7 +5,7 @@
 ## Equal Weights
 
 ```@docs
-equal_weights
+equal_weights(returns::AbstractMatrix)::AbstractVector
 ```
 ## Long Only Minimum Variance
 

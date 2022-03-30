@@ -1,7 +1,7 @@
 """
-    equal_weights
+    equal_weights(returns::AbstractMatrix)::AbstractVector
 ```math
-    w_i = 1/N \\quad  i \\in {1, \\hdots, N} 
+    w_i = 1/N \\quad  i \\in [1, \\hdots, N] 
 ```
 External links
 * DeMiguel, V., Garlappi, L., & Uppal, R. (2009). 
@@ -20,10 +20,10 @@ function equal_weights(returns::AbstractMatrix)::AbstractVector
 end
 
 """
-    long_only_minimum_variance
+long_only_minimum_variance
     ```math
     \\textrm{minimize}_{\\frac{\\vec{w}^T \\vec{\\sigma}}{\\sqrt{\\vec{w}^T \\Sigma \\vec{w}}}, \\\\
-    \\textrm{subject to} \\quad \\vec{1}^T \\vec{w} = 1 \\ \\vec{w} \\geq 0.
+    \\textrm{subject to} \\quad \\vec{1}^T \\vec{w} = 1 \\quad \\vec{w} \\geq 0.
 ```
 External links
 * DeMiguel, V., Garlappi, L., & Uppal, R. (2009). 
